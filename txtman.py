@@ -13,7 +13,7 @@ space = ' '
 if ('-a' in mode or '--aesthetic' in mode):
 	if mode[-1].isdecimal():
 		space *= int(mode[-1])
-	pyperclip.copy(' '.join(str))
+	pyperclip.copy(space.join(str))
 	print(space.join("aestheticized") + " text copied to clipboard")
 elif (mode == '-c' or mode == '--capitalize'):
 	pyperclip.copy(str.upper())
